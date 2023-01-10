@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body {
+           max-width: 1240px;
+           margin: 0 auto;
+        }
+
+       h1 {
+        font-size: 10vw;
+       }
+
+       .panda img {
+         width: 100%;
+       }
+
+       .container-two {
+         display: flex;
+       }
+
+       .container-two .split {
+         width: 50%;
+       }
+
+       .split img {
+        width: 100%;
+       }
+
+       /* smaller device */
+       @media screen and (max-width: 576px) {
+            .container-two {
+                flex-direction: column-reverse;
+            }
+
+            .container-two .split {
+              width: 100%;
+       }
+       }
+
+       /* multi colum */
+       .container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+        }
+
+        .product {
+            border: 2.5px solid rgb(7, 36, 7);
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .product img {
+            width: 75%;
+        }
+
+        /* responsive with media query */
+
+        /* smaller device */
+        @media screen and (max-width: 576px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* medium device */
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>My Responsive Website</h1>
+    </section>
+    <section>
+        <div class="panda">
+            <h2>Panda</h2>
+            <img src="images/panda.png" alt="">
+        </div>
+    </section>
+    <section>
+        <h2>Two Parts</h2>
+        <div class="container-two">
+            <div class="split">
+                <img src="images/product.webp" alt="">
+            </div>
+            <div class="split">
+                <img src="images/panda.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Multi-Colum</h2>
+        <div class="container">
+            <div class="product">
+                <img src="images/product.webp" alt="">
+                <h2>product-1</h2>
+                <h4>price: 1000৳</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eius! Dolorum accusamus commodi adipisci veritatis natus corporis voluptatem laudantium beatae magnam. Repellat cumque, ducimus maiores laborum assumenda ipsa inventore vel.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product.webp" alt="">
+                <h2>product-2</h2>
+                <h4>price: 2000৳</h4>
+                <p>Beatae, illo. Vitae reprehenderit totam porro asperiores dolorum quas ipsum modi laborum ex ad, a temporibus, tenetur nobis non sit possimus, laudantium facilis assumenda accusamus dolores quidem eius! Architecto, neque.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product.webp" alt="">
+                <h2>product-3</h2>
+                <h4>price: 3000৳</h4>
+                <p>Optio nesciunt accusamus illum quia voluptatibus doloribus repellendus, quibusdam repellat placeat hic similique error, iste sint fuga! Quam, commodi sequi delectus doloremque eos expedita tenetur ipsum sit mollitia, quaerat beatae.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product.webp" alt="">
+                <h2>product-4</h2>
+                <h4>price: 4000৳</h4>
+                <p>Minima veritatis esse voluptas ipsa quam unde officia sint libero nemo architecto voluptatibus doloremque dicta quas vero consequuntur, praesentium et ut deserunt tenetur. Tempore enim, ipsa ullam adipisci eaque voluptas.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product.webp" alt="">
+                <h2>product-5</h2>
+                <h4>price: 5000৳</h4>
+                <p>Nesciunt perspiciatis, sint modi at vitae natus magnam deserunt, tempora distinctio incidunt, recusandae repellendus ipsam voluptate placeat excepturi molestiae rerum aliquid. Exercitationem facilis incidunt natus odio necessitatibus enim provident laborum?</p>
+                <button>Order Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product.webp" alt="">
+                <h2>product-6</h2>
+                <h4>price: 6000৳</h4>
+                <p>Voluptates necessitatibus veniam illo, recusandae nam saepe cupiditate molestiae, nisi reiciendis, assumenda sapiente perspiciatis veritatis quibusdam ipsum beatae nihil ad voluptatibus laudantium eveniet numquam? Fugit magni nesciunt ratione tenetur repellendus.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product.webp" alt="">
+                <h2>product-7</h2>
+                <h4>price: 7000৳</h4>
+                <p>Exercitationem nemo dicta ea labore earum tenetur, nisi temporibus quasi illum pariatur nesciunt veritatis fugit doloremque recusandae consequatur obcaecati odit alias consectetur. Quasi minima amet tenetur hic ducimus? Quis, earum!</p>
+                <button>Order Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product.webp" alt="">
+                <h2>product-8</h2>
+                <h4>price: 8000৳</h4>
+                <p>Repellendus sapiente eius, soluta quibusdam provident pariatur sint officiis omnis dolore ut blanditiis ipsa harum iusto molestias eligendi error aspernatur, veritatis dolores. Eos, earum ex delectus veritatis aut maiores nostrum.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product.webp" alt="">
+                <h2>product-9</h2>
+                <h4>price: 9000৳</h4>
+                <p>Voluptates dolorem laboriosam consequuntur quas esse fugiat praesentium placeat vero, doloribus odit sed modi ad quo ut similique nam dolorum reiciendis veritatis quam. Odio id vel eum totam, consequatur numquam.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product.webp" alt="">
+                <h2>product-10</h2>
+                <h4>price: 10000৳</h4>
+                <p>Dolor est incidunt tempora iusto magni quia architecto, possimus necessitatibus quos itaque! Quidem quia odio ab, aperiam neque quibusdam sunt necessitatibus nulla id, ipsum ullam itaque amet illo recusandae natus.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product.webp" alt="">
+                <h2>product-11</h2>
+                <h4>price: 11000৳</h4>
+                <p>Quisquam, illum nesciunt, at fugit vero molestias recusandae iure facere et debitis expedita corrupti! Sunt autem optio corrupti corporis facere a dolorem aperiam eius. Voluptate officia cumque ipsam velit nulla.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="product">
+                <img src="images/product.webp" alt="">
+                <h2>product-12</h2>
+                <h4>price: 12000৳</h4>
+                <p>Necessitatibus alias nostrum cum sit accusantium iure nulla voluptate minima repellendus veritatis amet sunt harum corporis, odio iusto sed doloremque illum nesciunt. Iusto quibusdam minus rerum nesciunt omnis ratione nemo.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Seven things you need to do to make a website responsive
+    
+       1.viewport meta tag (default vabe thake)
+       2.CSS Relative unit (example: em, rem, vw using)
+       3. Responsive Image or Fluid Image (example: use width: 100%)
+       4. body max-with and margin auto
+          example:
+           body {
+            max-width: 1240px;
+            margin: 0 auto;
+            }
+        
+        5. Responsive split screen using flex (2 colum section)
+        6. Grid responsive (multi colum)   
+        7. Responsive Menu (Bootstrap responsive)
+    -->
+</body>
+</html>
