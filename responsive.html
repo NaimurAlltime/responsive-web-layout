@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive </title>
+    <style>
+        .container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+        }
+
+        .product {
+            border: 2.5px solid rgb(7, 36, 7);
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .product img {
+            width: 75%;
+        }
+
+        /* responsive with media query */
+
+        /* smaller device */
+        @media screen and (max-width: 576px) {
+            .container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        /* medium device */
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.product*12>img[src="images/product.webp"]+h2{product-$}+h4{price: $000৳}+p>lorem30^button{Order Now} -->
+    <div class="container">
+        <div class="product">
+            <img src="images/product.webp" alt="">
+            <h2>product-1</h2>
+            <h4>price: 1000৳</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est fugiat mollitia molestiae nulla laborum cumque, officia, deleniti cum officiis esse veritatis. Odio itaque delectus adipisci molestias incidunt excepturi soluta.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product">
+            <img src="images/product.webp" alt="">
+            <h2>product-2</h2>
+            <h4>price: 2000৳</h4>
+            <p>Quae, quaerat ad! Expedita minus ipsa, harum cupiditate dolorum id voluptates vero adipisci illo? Mollitia aspernatur harum ea eveniet, velit eius dolores doloribus, voluptate, laudantium doloremque fugit illum cum praesentium.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product">
+            <img src="images/product.webp" alt="">
+            <h2>product-3</h2>
+            <h4>price: 3000৳</h4>
+            <p>Architecto, facere unde expedita doloribus impedit quia quod illo quo officiis eveniet sapiente autem quidem sunt praesentium voluptate error aut ab est temporibus, maxime facilis ipsa ea saepe odit! Quam.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product">
+            <img src="images/product.webp" alt="">
+            <h2>product-4</h2>
+            <h4>price: 4000৳</h4>
+            <p>Magnam voluptatibus porro, rerum explicabo nemo tempore aspernatur obcaecati deleniti ratione ea numquam doloribus, reprehenderit qui. Ullam provident recusandae fugiat, officiis eos aspernatur incidunt amet. Ipsam repellendus ab quibusdam totam.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product">
+            <img src="images/product.webp" alt="">
+            <h2>product-5</h2>
+            <h4>price: 5000৳</h4>
+            <p>Nisi ducimus quam tempora omnis eaque mollitia error eum, sed officiis, illo repudiandae odio quisquam aperiam odit eos qui. Error, minus sapiente! Facere laborum veritatis quidem placeat amet esse velit?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product">
+            <img src="images/product.webp" alt="">
+            <h2>product-6</h2>
+            <h4>price: 6000৳</h4>
+            <p>Necessitatibus incidunt, minima voluptatum perspiciatis quos delectus iure similique nesciunt, quasi, labore expedita? Ad atque libero consequatur earum, blanditiis animi quae rem ipsam nemo molestias pariatur asperiores cum perspiciatis corrupti?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product">
+            <img src="images/product.webp" alt="">
+            <h2>product-7</h2>
+            <h4>price: 7000৳</h4>
+            <p>Quisquam soluta a dolor veniam exercitationem dolores, voluptas voluptatibus consequuntur? Blanditiis pariatur assumenda enim amet aperiam ex. Dicta quae illo similique nihil ad, natus debitis, eaque temporibus optio perspiciatis mollitia.</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product">
+            <img src="images/product.webp" alt="">
+            <h2>product-8</h2>
+            <h4>price: 8000৳</h4>
+            <p>Ratione itaque quo laudantium quia molestias. Aperiam tempora consequuntur voluptatem asperiores neque, commodi totam distinctio quis sunt ducimus repellat velit delectus possimus nemo adipisci obcaecati dolorum explicabo in sit pariatur?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product">
+            <img src="images/product.webp" alt="">
+            <h2>product-9</h2>
+            <h4>price: 9000৳</h4>
+            <p>Beatae, vero et illo culpa hic assumenda recusandae quis reprehenderit aliquam labore? Expedita sint accusamus est ipsa reprehenderit! Voluptatibus molestiae nam quos, cum repellat dolore excepturi vel a delectus. Tenetur!</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product">
+            <img src="images/product.webp" alt="">
+            <h2>product-10</h2>
+            <h4>price: 10000৳</h4>
+            <p>Quisquam aspernatur labore placeat magni aperiam reiciendis nam exercitationem accusantium, similique est optio pariatur recusandae quia, nemo reprehenderit modi. Odio voluptatem repellendus, ullam porro tenetur nobis dolorum blanditiis reiciendis quidem?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product">
+            <img src="images/product.webp" alt="">
+            <h2>product-11</h2>
+            <h4>price: 11000৳</h4>
+            <p>Expedita sequi provident suscipit molestiae autem necessitatibus? Labore blanditiis sapiente aperiam nulla assumenda dignissimos minus placeat fugit dolor eveniet necessitatibus vero alias iure dicta eaque, dolores inventore! Consequuntur, iure velit?</p>
+            <button>Order Now</button>
+        </div>
+        <div class="product">
+            <img src="images/product.webp" alt="">
+            <h2>product-12</h2>
+            <h4>price: 12000৳</h4>
+            <p>Illum recusandae placeat quis! A voluptatem ea itaque! Perspiciatis libero debitis quod excepturi quibusdam iure magnam asperiores provident adipisci dolorum veniam, eaque dolores dolorem quam delectus, omnis tenetur fugit optio?</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+</body>
+</html>
